@@ -1,0 +1,76 @@
+.wrapper {
+  padding: 24px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.empty {
+  font-size: 16px;
+  color: #999;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.lessonTitle {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.description {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.images {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+
+  .imageItem {
+    width: 160px;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #666;
+      margin-top: 4px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+
+  button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: #007aff;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      background: #0063cc;
+    }
+  }
+}

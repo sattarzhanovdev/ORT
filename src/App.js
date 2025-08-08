@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import axios from 'axios'
+import MainRoutes from './routes';
+import { Components } from './components'
+import { useLocation, useNavigate } from 'react-router-dom';
+
+axios.defaults.baseURL = 'http://127.0.0.1:8000/api';
 
 function App() {
+  const path = useLocation().pathname
+
+  const navigate = useNavigate();
+  React.useEffect(() => {
+    if(path !== '/login'){
+      const token = localStorage.getItem('token')
+      if(!token){
+        navigate('/login')
+      }
+    }
+  }, [path]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainRoutes />
+      <Components.Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
