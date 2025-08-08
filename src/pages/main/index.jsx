@@ -23,7 +23,7 @@ const Main = () => {
   return (
     <div className={c.wrapper}>
       <header className={c.header}>
-        <h2>Добрый день, <strong>{user[0].full_name}</strong></h2>
+        <h2>Добрый день, <strong>{user && user[0]?.full_name}</strong></h2>
       </header>
 {/* 
       <section className={c.mainBlock}>
@@ -58,7 +58,7 @@ const Main = () => {
         {/* Пример предмета */}
 
         {
-          subjects && subjects.map(item => (
+          subjects && subjects?.map(item => (
             <div className={c.subjectCard}>
               <h3>{item.name}: основное</h3>
               {/* <div className={c.progressBar}>
