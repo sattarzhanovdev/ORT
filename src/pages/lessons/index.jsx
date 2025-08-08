@@ -54,7 +54,7 @@ const Lessons = () => {
               </button>
               <button
                 className={s.secondaryBtn}
-                onClick={() => navigate(`/testing/${lesson.id}`)}
+                onClick={() => navigate(`/test/${lesson.id}`)}
               >
                 Перейти к тесту
               </button>
