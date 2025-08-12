@@ -29,7 +29,7 @@ const Lessons = () => {
       </p>
 
       {subjects?.map(subject => {
-  const subjectLessons = lessons.filter(lesson => lesson.subject === subject.id)
+          const subjectLessons = lessons.filter(lesson => lesson.subject === subject.id)
 
   return (
     <div key={subject.id} className={s.subjectBlock}>
