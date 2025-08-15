@@ -5,6 +5,7 @@ import { Components } from './components'
 import { useLocation, useNavigate } from 'react-router-dom';
 
 axios.defaults.baseURL = 'https://ortbackend.pythonanywhere.com/api';
+// axios.defaults.baseURL = 'http://127.0.0.1:8000/api'
 
 function App() {
   const path = useLocation().pathname

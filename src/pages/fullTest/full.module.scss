@@ -1,0 +1,49 @@
+.page {
+  padding: 20px;
+  background: #f7f8fa;
+  min-height: 100vh;
+  font-family: "SF Pro Display", sans-serif;
+
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subjectBlock {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.subjectName {
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+
+.subjectDesc {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #005fc4;
+}

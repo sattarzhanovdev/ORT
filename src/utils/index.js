@@ -35,6 +35,16 @@ export const PUBLIC_ROUTES = [
     id: 7,
     path: '/lessons/:subject',
     component: <Pages.LessonsDivided />
+  },
+  {
+    id: 8, 
+    path: '/trial',
+    component: <Pages.FullTest />
+  },
+  {
+    id: 9,
+    path: '/tests/:id',
+    component: <Pages.TestTrial />
   }
 ]
 
@@ -44,11 +54,11 @@ export const Navlist = [
     title: '🏠 Главное',
     path: '/'
   },
-  // {
-  //   id: 2, 
-  //   title: '🧪 Тесты',
-  //   path: '/tests/'
-  // }, 
+  {
+    id: 2, 
+    title: '🧪 Пробный тест',
+    path: '/trial/'
+  }, 
   {
     id: 3, 
     title: '📘 Материал', 
